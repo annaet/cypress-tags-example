@@ -1,22 +1,25 @@
 {
   "name": "cypress-tags-example",
   "version": "0.0.1",
-  "description": "",
+  "description": "Demo Cypress project using cypress-tags",
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "cy:smoke": "CYPRESS_TAGS=smoke cypress run",
-    "cy:wip": "CYPRESS_TAGS=wip cypress run",
-    "cy:not-wip": "CYPRESS_NOT_TAGS=wip cypress run",
-    "cy:complex": "CYPRESS_TAGS=smoke,regression CYPRESS_NOT_TAGS=wip cypress run",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:smoke": "CYPRESS_INCLUDE_TAGS=smoke cypress run",
+    "cy:wip": "CYPRESS_INCLUDE_TAGS=wip cypress run",
+    "cy:not-wip": "CYPRESS_EXCLUDE_TAGS=wip cypress run",
+    "cy:complex": "CYPRESS_INCLUDE_TAGS=smoke,regression CYPRESS_EXCLUDE_TAGS=wip cypress run"
   },
-  "author": "",
+  "author": "Anna Thomas",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/annaet/cypress-tags-example.git"
+  },
   "dependencies": {
     "cypress": "^5.5.0",
-    "cypress-tags": "0.0.4"
+    "cypress-tags": "0.0.7"
   },
   "devDependencies": {
     "typescript": "^4.0.5"
