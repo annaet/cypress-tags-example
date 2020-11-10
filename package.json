@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "cypress": "^5.5.0",
-    "cypress-tags": "0.0.12"
+    "cypress-tags": "0.0.13"
   },
   "devDependencies": {
     "typescript": "^4.0.5"
