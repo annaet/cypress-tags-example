@@ -8,7 +8,7 @@ Demo Cypress project using [cypress-tags](https://github.com/annaet/cypress-tags
 
 ## Run Tests
 
-This suite contains six test cases. They don't do anything but you can run them using:
+This suite contains a series of tagged and untagged test cases. They don't do anything, but you can run them using:
 
 ```bash
 npx cypress run
