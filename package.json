@@ -9,7 +9,8 @@
     "cy:smoke": "CYPRESS_INCLUDE_TAGS=smoke cypress run",
     "cy:wip": "CYPRESS_INCLUDE_TAGS=wip cypress run",
     "cy:not-wip": "CYPRESS_EXCLUDE_TAGS=wip cypress run",
-    "cy:complex": "CYPRESS_INCLUDE_TAGS=smoke,regression CYPRESS_EXCLUDE_TAGS=wip cypress run"
+    "cy:complex": "CYPRESS_INCLUDE_TAGS=smoke,regression CYPRESS_EXCLUDE_TAGS=wip cypress run",
+    "test": "npm run cy:run"
   },
   "author": "Anna Thomas",
   "license": "ISC",
@@ -18,8 +19,8 @@
     "url": "https://github.com/annaet/cypress-tags-example.git"
   },
   "dependencies": {
-    "cypress": "^5.5.0",
-    "cypress-tags": "0.0.13"
+    "cypress": "^6.1.0",
+    "cypress-tags": "0.0.17"
   },
   "devDependencies": {
     "typescript": "^4.0.5"
