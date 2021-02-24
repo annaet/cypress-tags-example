@@ -19,10 +19,10 @@
     "url": "https://github.com/annaet/cypress-tags-example.git"
   },
   "dependencies": {
-    "cypress": "^6.1.0",
-    "cypress-tags": "0.0.19"
+    "cypress": "^6.5.0",
+    "cypress-tags": "0.0.20"
   },
   "devDependencies": {
-    "typescript": "^4.0.5"
+    "typescript": "^4.2.2"
   }
 }
