@@ -33,7 +33,17 @@ CYPRESS_INCLUDE_TAGS=smoke,regression npx cypress run
 CYPRESS_EXCLUDE_TAGS=wip npx cypress run
 ```
 
-* Run all `smoke` and `regression` tests but not those marked as `wip`:
+* Run all `smoke` **or** `regression` tests but not those marked as `wip`:
 ```bash
 CYPRESS_INCLUDE_TAGS=smoke,regression CYPRESS_EXCLUDE_TAGS=wip npx cypress run
+```
+
+* Run all `smoke` **and** `regression` tests:
+```bash
+CYPRESS_INCLUDE_USE_BOOLEAN_AND=true CYPRESS_INCLUDE_TAGS=smoke,regression npx cypress run
+```
+
+* Run all tests but not those marked as `smoke` **and** `regression`:
+```bash
+CYPRESS_EXCLUDE_USE_BOOLEAN_AND=true CYPRESS_EXCLUDE_TAGS=smoke,regression npx cypress run
 ```
